@@ -24,7 +24,7 @@ int rand_int() {
     HCRYPTPROV hCryptProv;
     BYTE pbData[4];
     if (CryptAcquireContext(&hCryptProv, NULL, "Microsoft Base Cryptographic Provider v1.0", PROV_RSA_FULL, CRYPT_VERIFYCONTEXT)) {
-        if (CryptGenRandom(hCryptProv,16,pbData)) {
+        if (CryptGenRandom(hCryptProv,4,pbData)) {
             x = (pbData[3] << 24) | (pbData[2] << 16) | (pbData[1] << 8) | (pbData[0]); 
             // delete rand_msg;
         }
