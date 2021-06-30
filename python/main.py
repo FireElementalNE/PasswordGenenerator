@@ -18,3 +18,4 @@ if __name__ == '__main__':
 	parser.add_argument("length", help="number of characters for the password", type=int)
 	args = parser.parse_args()
 	main(args.length)
+	

@@ -34,3 +34,4 @@ class Username:
 		adj[0] = adj[0].upper()
 		noun[0] = noun[0].upper()
 		return f"{''.join(adj)}{''.join(noun)}"
+		

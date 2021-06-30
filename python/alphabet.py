@@ -27,3 +27,4 @@ class Alphabet:
 		for i in range(self.length):
 			out_str.append(self.get_random_char())
 		return ''.join(out_str)
+		
